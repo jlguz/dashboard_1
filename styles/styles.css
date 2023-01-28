@@ -1,76 +1,125 @@
-    /*google font import - poppins*/
-    
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap');
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-     :root {
-        /* colores */
-        --color_body_bg: #057ae1;
-        --color_body_bg1: #000042;
-        --color-font-header: #bfbfbf;
-        --color_title: #595959;
-        --color_subitlle: #7f7f7f;
-        --color-font-footer: #bfbfbf;
-        --color_a_hover: #d3d3d3;
-        /*colores sidebar**/
-        --body-color: #E4E9F7;
-        --sidebar-color: #FFF;
-        --primary-color: #695CFE;
-        --primary-color-light: #F6F5FF;
-        --toggle-color: #DDD;
-        --text-color: #707070;
-        /*transitions*/
-        --tran-02: all 0.2s ease;
-        --tran-03: all 0.3s ease;
-        --tran-04: all 0.4s ease;
-        --tran-05: all 0.5s ease;
-    }
-    
-    body {
-        font-family: sans-serif;
-        min-height: 100vh;
-        min-width: 100%;
-        background: linear-gradient( to right top, var(--color_body_bg1), var(--color_body_bg));
-    }
-    
-    .header {
-        width: 100%;
-        height: 56px;
-    }
-    
-    .main_cont {
-        padding: 0;
-        height: calc(100vh - 56px);
-    }
-    
-    .col1 {
-        width: 56px;
-        padding: 0;
-        height: calc(100vh - 56px);
-    }
-    
-    .col2 {
-        background-color: #595959;
-        width: calc(100% - 66px);
-        height: calc(100vh - 56px);
-        padding: 0;
-    }
-    
-    .side_navbar {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        color: #bfbfbf;
-        background-color: #bfbfbf;
-    }
-    
-    .test {
-        width: 1202.4px;
-        margin: 0;
-    }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* colores */
+    --color_body_bg: #292929;
+    --color-side: #353535;
+    --color-main: #ababab;
+    --color_title: #ffffff;
+    --color_subitlle: #dcdcdc;
+    --color-text: #cccccc;
+    --color-icon: #ababab;
+    --color_a_hover: #d3d3d3;
+    --color-font-footer: #bfbfbf;
+    --color-card-bg: #4a4949;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-color: var(--color_body_bg);
+}
+
+header {
+    height: 56px;
+}
+
+.nav {
+    background-color: var(--color-side);
+}
+
+.contfluid {
+    padding-left: 0;
+}
+
+.button_trigger {
+    padding: 8px;
+    background-color: var(--color-side);
+    border: none;
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    padding: 0;
+    height: calc(100vh - 56px);
+    background-color: var(--color_body_bg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 1440px;
+    height: calc(100vh - 56px);
+    padding: 0;
+}
+
+.cards_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.chart_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+
+.card {
+    background-color: var(--color-card-bg);
+}
+
+.card-header {
+    color: var(--color_title);
+}
+
+.card-title {
+    color: var(--color_subitlle);
+}
+
+.card-text {
+    color: var(--color-text);
+}
+
+
+/* offcanvas*/
+
+.canvas {
+    width: 250px;
+}
+
+
+/* aside */
+
+aside {
+    width: 56px;
+    height: calc(100vh - 56px);
+    order: -1;
+    padding: 0;
+    background-color: var(--color-side);
+}
+
+.side_navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon {
+    font-size: 22px;
+    color: var(--color-icon);
+}
+
+.icon1 {
+    padding: 20px 0;
+}
