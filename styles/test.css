@@ -34,6 +34,15 @@ header {
     background-color: var(--color-side);
 }
 
+.contfluid {
+    padding-left: 0;
+}
+
+.button_trigger {
+    padding: 1px;
+    background-color: var(--color-side);
+}
+
 .content {
     display: flex;
     flex: 1;
